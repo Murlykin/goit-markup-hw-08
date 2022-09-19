@@ -1,0 +1,54 @@
+/* ============================ cection-2================= */
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -30px;
+    padding: 0px;
+    &>.description__items {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+}
+}
+
+.hidden-visally {
+    position: fixed;
+    transform: scale(0);
+    & .description__text {
+    color: var(--secondory-text-color);
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+}
+
+.description__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.description__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--text-color-p);
+    margin-top: 0;
+}
+
+.description__icones {
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--icone-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.description__icone {
+    background-color: var(--icone-bg-color);
+}

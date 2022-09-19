@@ -1,0 +1,7 @@
+.portfolio__buttons>.items {
+    display: inline-block;
+}
+
+.portfolio__buttons .items+.items {
+    margin-left: 8px;
+}

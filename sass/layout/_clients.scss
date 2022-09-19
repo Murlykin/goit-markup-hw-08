@@ -1,0 +1,35 @@
+/* ====================== clients =======================================*/
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    & .item {
+    flex-basis: calc((100% - 150px) / 6);
+}
+    &>.icones {
+    display: flex;
+    align-self: center;
+    width: 170px;
+    height: 92px;
+}
+}
+
+.clients__links {
+    @include flexCenter ();
+    height: 92px;
+    color: var(--icone-color);
+    fill: currentColor;
+    border: 1px solid var(--icone-color);
+    border-radius: 4px;
+    outline: 2px solid var(--technical-color);
+    transition: fill 250ms var(--timing-functione), border-color 250ms var(--timing-functione);
+    &:hover,
+    &:focus {
+    fill: var(--beckground-color);
+    border-color: var(--beckground-color);
+}
+}
+
+

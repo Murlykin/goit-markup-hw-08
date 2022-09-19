@@ -1,0 +1,62 @@
+.subscribe {
+    display: flex;
+}
+
+.subskribe__conteiner {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.subscribe__form {
+    display: flex;
+}
+
+.subskribe__input {
+    min-width: 358px;
+    min-height: 50px;
+    padding-left: 16px;
+    background-color: var(--footer-bacground-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto';
+}
+
+.subscribe__icone {
+    top: 0;
+    right: 0;
+}
+
+.subskribe__button {
+    position: relative;
+    color: var(--body-background-color);
+    background-color: var(--beckground-color);
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 216px;
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    border-color: transparent;
+    transition: background-color 250ms var(--timing-functione);
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subskribe__button:hover,
+.subskribe__button:focus {
+    background-color: var(--button-hover-focus);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}

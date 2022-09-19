@@ -1,0 +1,19 @@
+.sections {
+    @extend %sections;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    &.about {
+    padding-top: 0;
+}
+}
+
+.sections__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin: 0px;
+    margin-bottom: 50px;
+}
