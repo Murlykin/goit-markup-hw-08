@@ -4,6 +4,14 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px;
+    width: 480px;
     outline: 2px solid var(--technical-color);
+
+        @media (min-width:768px) {
+                min-width: 768px;
+            }
+        
+            @media (min-width:1200px) {
+                min-width: 1200px;
+            }
 }

@@ -5,24 +5,77 @@
     background-color: var(--footer-bacground-color);
     text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/сoworker.jpg);
+        url(../images/сoworker-mobile.jpg);
     background-position: center;
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
 }
 
+// tablet-img
+
+@media screen and (min-width:768px) {
+    .header{
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-tablet.jpg);
+    }
+}
+
+//    desltop-img
+
+@media screen and (min-width:1200px) {
+    .header{
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker.jpg);
+    }
+}
+
+// 2x-img
+
+// mobile-2x
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
+screen and (min-resolution: 192dpi) and (max-width:767px),
+screen and (min-resolution: 2dppx) and (max-width:767px) {
+    .header {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-mobile@2x.jpg);
+    }
+}
+
+//    tablet-2x
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .header {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-tablet@2x.jpg);
+    }
+}
+
+// desktop-2x
+@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+screen and (min-resolution: 192dpi) and (min-width:1200px),
+screen and (min-resolution: 2dppx) and (min-width:1200px) {
+    .header {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker@2x.jpg);
+    }
+}
+
 .header__text {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--body-background-color);
     margin-top: 0px;
     margin-bottom: 30px;
+
+    @media (min-width:1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
 }
+
 /* =====================button Studio=====================*/
 .header__button {
     font-family: 'Roboto';

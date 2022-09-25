@@ -70,8 +70,14 @@ body {
 }
 
 .sections {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .conteiner,
@@ -80,8 +86,20 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 480px;
   outline: 2px solid var(--technical-color);
+}
+@media (min-width: 768px) {
+  .conteiner,
+.conteiner-top {
+    min-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .conteiner,
+.conteiner-top {
+    min-width: 1200px;
+  }
 }
 
 .sections.about {
@@ -118,6 +136,12 @@ body {
   color: var(--text-color);
   text-decoration: none;
 }
+@media (min-width: 1200px) {
+  .head-sectione__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
 .head-sectione__logo--color {
   color: var(--beckground-color);
@@ -132,6 +156,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 767px) {
+  .main-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
 
 .site-nav {
   display: -webkit-box;
@@ -144,6 +178,16 @@ body {
 .site-nav .site-nav__items:not(:last-child) {
   margin-right: 50px;
 }
+@media (min-width: 768px) {
+  .site-nav {
+    margin-left: 88px;
+  }
+}
+@media (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
 
 .auth-nav {
   display: -webkit-box;
@@ -155,6 +199,11 @@ body {
 }
 .auth-nav .auth-nav__items:not(:first-child) {
   margin-left: 50px;
+}
+@media (max-width: 1200px) {
+  .auth-nav {
+    display: none;
+  }
 }
 
 .link-focus a {
@@ -237,24 +286,60 @@ body {
   padding-bottom: 200px;
   background-color: var(--footer-bacground-color);
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/сoworker.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/сoworker-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-mobile.jpg);
   background-position: center;
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/сoworker-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-tablet.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/сoworker.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/сoworker-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-mobile@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/сoworker-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-tablet@2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/сoworker@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker@2x.jpg);
+  }
+}
 .header__text {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--body-background-color);
   margin-top: 0px;
   margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .header__text {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 /* =====================button Studio=====================*/
@@ -784,8 +869,15 @@ body {
           column-gap: 30px;
 }
 .clients .item {
-  -ms-flex-preferred-size: calc((100% - 150px) / 6);
-      flex-basis: calc((100% - 150px) / 6);
+  -ms-flex-preferred-size: calc((100% - 150px) / 2);
+      flex-basis: calc((100% - 150px) / 2);
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .clients .item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .clients > .icones {
   display: -webkit-box;

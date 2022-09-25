@@ -16,6 +16,12 @@
     letter-spacing: 0.03em;
     color: var(--text-color);
     text-decoration: none;
+    @media (min-width:1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
+
+
 }
 
 .head-sectione__logo--color {
