@@ -1,11 +1,14 @@
 .subscribe {
-    display: flex;
-}
+
+        @media screen and (min-width:1200px) {
+            display: flex;
+                 }
+    }
 
 .subskribe__conteiner {
     margin: 0;
     padding: 0;
-    margin-left: auto;
+    // margin-left: auto;
 }
 
 .subscribe__form {
@@ -13,7 +16,7 @@
 }
 
 .subskribe__input {
-    min-width: 358px;
+    min-width: 100%;
     min-height: 50px;
     padding-left: 16px;
     background-color: var(--footer-bacground-color);
@@ -22,6 +25,16 @@
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     font-family: 'Roboto';
+     margin-bottom: 20px;
+    outline: none;
+    @media screen and (min-width:768px) {
+        min-width: 450px;
+    }
+
+    @media screen and (min-width:1200px) {
+        min-width: 358px;
+        margin-bottom: 0;
+    }
 }
 
 .subscribe__icone {
@@ -37,6 +50,7 @@
     padding: 10px 32px;
     min-width: 216px;
     margin-left: 10px;
+    margin: 0 auto;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
@@ -52,6 +66,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+        @media screen and (min-width:7680px) {
+            margin-left: 50px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            margin-left: 12px;
+        }
 }
 
 .subskribe__button:hover,
@@ -60,3 +82,5 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
+
+

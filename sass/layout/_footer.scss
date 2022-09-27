@@ -1,9 +1,12 @@
 /* =======================Footer===========================================*/
- .footer {
+.footer {
   background: var(--footer-bacground-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  
+
+    @media screen and (max-width:767px) {
+        text-align: center;
+      }
 }
 
 .footer__map {
@@ -23,25 +26,32 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer__address {
-list-style: none;
+  list-style: none;
 
-&>.items:not(:last-child) {
-  margin-bottom: 9px;
+  &>.items:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  & a {
+    transition: color 250ms var(--timing-functione);
+  }
+
+  & a:hover,
+  & a:focus {
+    color: var(--beckground-color);
+    outline: none;
+  }
 }
 
-& a {
-  transition: color 250ms var(--timing-functione);
-}
-
-& a:hover,
-& a:focus {
-  color: var(--beckground-color);
-  outline: none;
-}
-}
 .footer__add {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width:1200px) {
+    
+    margin-left: 70px;
+    }
+
 }
 
 .footer__title {
@@ -55,26 +65,60 @@ list-style: none;
   margin-top: 12px;
   margin-bottom: 20px;
   color: var(--body-background-color);
+  
+    @media screen and (min-width:768px) {
+        text-align: center;
+    
+      }
+    
+      @media screen and (min-width:1200px) {
+        text-align: start;
+    
+      }
 }
+
 
 .sochmed-footer {
   display: flex;
   flex-wrap: wrap;
 }
 
- .footer__conteiner {
-  display: flex;
-}
+.footer__conteiner {
+  @media screen and (min-width:768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      row-gap: 60px;
+      flex-wrap: wrap;
+    }
+  
+    @media screen and (min-width:1200px) {
+      display: flex;
+
+    }
+  }
+
+
+  
+
 
 .footer__link {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 30px;
+
+      @media (min-width:480px) {
+          justify-content: center;
+        }
 }
 
 .footer__link>.item {
   display: flex;
 }
-
+.footer__block{
+  
+    margin-bottom: 60px;
+}
 .icones .footer__block {
   margin-left: auto;
   margin-right: auto;

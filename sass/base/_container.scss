@@ -1,17 +1,26 @@
-.conteiner,
-.conteiner-top {
+.conteiner {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 480px;
+    width: 100%;
     outline: 2px solid var(--technical-color);
-
-        @media (min-width:768px) {
-                min-width: 768px;
-            }
-        
-            @media (min-width:1200px) {
-                min-width: 1200px;
-            }
 }
+
+    @media screen and (min-width:480px) {
+    .conteiner {
+        width: 480px;
+
+    }
+}
+  @media screen and (min-width:768px) {
+      .conteiner {
+        min-width: 768px;
+      }
+  }
+   @media screen and (min-width:1200px) {
+       .conteiner {
+           min-width: 1200px;
+       }
+
+   }

@@ -2,6 +2,7 @@
 
 .team {
     background-color: var(--teams-bacground-color);
+    align-items: center;
 }
 
 .team__header,
@@ -26,16 +27,27 @@
 }
 
 .team__crew {
-    display: flex;
+display: flex;
+    // justify-content: center;
     flex-wrap: wrap;
-    margin: 0 0 0 -30px;
+        gap: 30px;
+  
+     
+   @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+            &>.items {
+             background-color: var(--body-background-color);
+    
+    }}
     &>.items {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
     background-color: var(--body-background-color);
-    width: 270px;
-}
-}
+    
+
+@media screen and (min-width: 1200px) {
+        width: 270px;
+     }
+}}
 
 .team__conteiner {
     display: block;

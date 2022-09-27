@@ -1,15 +1,18 @@
 /* ============================ cection-2================= */
 .description {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 0 -30px;
+    @media screen and (min-width:1200px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 0 0 -30px;
+        }
     padding: 0px;
-    &>.description__items {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
+    &>.description__items { 
+        @media screen and (min-width:1200px) {
+            flex-basis: calc(100% / 4 - 30px);
+            margin-left: 30px;
 }
 }
-
+}
 .hidden-visally {
     position: fixed;
     transform: scale(0);
@@ -29,7 +32,13 @@
     text-transform: uppercase;
     color: var(--text-color);
     margin-bottom: 10px;
-}
+    text-align: center;
+
+        @media screen and (min-width:1200px) {
+                text-align: start;
+            }
+        }
+
 
 .description__text {
     font-size: 14px;

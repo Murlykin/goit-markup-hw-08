@@ -2,6 +2,7 @@
 .main-nav {
     display: flex;
     align-items: center;
+    // justify-content: space-between;
         @media (max-width:767px) {
                 justify-content: space-between;
                 padding: 0;
@@ -26,18 +27,24 @@
 }
 
 .auth-nav {
-    display: flex;
+    display: none;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+     padding-right: 15px;   
     & .auth-nav__items:not(:first-child) {
-    margin-left: 50px;
+        @media screen and (min-width:1200px) {
+                margin-left: 50px;
+        
+            }
 }
-        @media (max-width:1200px) {
-            display: none;
+        @media screen and (min-width:768px) {
+            display: block;
+    
+        }
+    
+        @media screen and (min-width:1200px) {
+            display: flex;
         }
 }
-
 .link-focus a {
     transition: color 250ms var(--timing-functione), fill 250ms var(--timing-functione);
     & a:hover,
@@ -57,8 +64,13 @@
     color: var(--text-color);
     position: relative;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+            padding-top: 32px;
+                padding-bottom: 32px;
+
+  @media screen and (min-width:1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+  }
 }
 
 .auth-nav__contact {
@@ -66,6 +78,8 @@
     align-items: center;
     color: var(--text-color-p);
     fill: var(--text-color-p);
+    padding-bottom: 10px;
+    padding-top: 0px;
 }
 
 .auth-nav__icones {
