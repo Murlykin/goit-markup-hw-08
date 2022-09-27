@@ -46,9 +46,9 @@
 }
 
 .footer__add {
-  margin-bottom: 60px;
+  
   @media screen and (min-width:1200px) {
-    
+    margin-bottom: 60px;
     margin-left: 70px;
     }
 
@@ -68,15 +68,12 @@
   
     @media screen and (min-width:768px) {
         text-align: center;
-    
-      }
+        }
     
       @media screen and (min-width:1200px) {
         text-align: start;
-    
       }
 }
-
 
 .sochmed-footer {
   display: flex;
@@ -94,20 +91,15 @@
   
     @media screen and (min-width:1200px) {
       display: flex;
-
     }
   }
-
-
-  
-
 
 .footer__link {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
 
-      @media (min-width:480px) {
+      @media screen and (max-width: 768px) {
           justify-content: center;
         }
 }
@@ -116,9 +108,10 @@
   display: flex;
 }
 .footer__block{
-  
-    margin-bottom: 60px;
-}
+  @media screen and (min-width:1200px) {
+     margin-bottom: 60px; 
+    }
+  }
 .icones .footer__block {
   margin-left: auto;
   margin-right: auto;

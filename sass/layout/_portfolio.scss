@@ -4,7 +4,16 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px){
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 50px;
+    gap: 8px;
+        
+    }
 }
+
 
 .portfolio__button {
     font-family: 'Roboto';

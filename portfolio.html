@@ -23,12 +23,64 @@
         <a href="index.html" class="head-sectione__logo animate__animated animate__bounceInLeft" lang="en"><span
             class="head-sectione__logo--color">Web</span>Studio</a>
         <nav>
-          <ul class="link-focus site-nav">
-            <li class="site-nav__items"><a href="index.html"
-                class="site-nav__link">Студія</a></li>
-            <li class="site-nav__items"><a href="portfolio.html" class="site-nav__link site-nav__link--accent">Портфоліо</a></li>
-            <li class="site-nav__items"><a href="#" class="site-nav__link ">Контакти</a></li>
-          </ul>
+        <!--  ==================== MOBILE MENU ==================== -->
+        <button type="button" class="main-nav__button js-open-menu">
+          <svg width="24" height="16" aria-label="перемикач мобільного меню">
+            <use class="main-nav__icone--menu" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="main-nav__mobile-menu js-menu-container">
+          <div class="mobile-menu__conteiner">
+            <div class="mobile-site-nav__conteiner">
+              <button class="mobile-menu__close-button js-close-menu">
+                <svg class="mobile-menu__close-icone">
+                  <use href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+              </button>
+              <ul class="mobile-site-nav">
+                <li class="mobile-site-nav__items">
+                  <a href="./index.html" class="mobile-site-nav__link mobile-site-nav__link--current">Студія</a>
+                </li>
+                <li class="mobile-site-nav__items">
+                  <a href="./portfolio.html" class="mobile-site-nav__link">Портфоліо</a>
+                </li>
+                <li class="mobile-site-nav__items">
+                  <a href="" class="mobile-site-nav__link">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-auth-nav__conteiner">
+              <ul class="mobile-auth-nav">
+                <li class="mobile-auth-nav__item">
+                  <a class="mobile-auth-nav__link mobile-auth-nav__link--phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-auth-nav__items">
+                  <a class="mobile-auth-nav__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mobile-soshmed">
+                <li class="mobile-soshmed__item">
+                  <a class="mobile-soshmed__link" href="#">Instagram</a>
+                </li>
+                <li class="mobile-soshmed__item">
+                  <a class="mobile-soshmed__link" href="#">Twitter</a>
+                </li>
+                <li class="mobile-soshmed__item">
+                  <a class="mobile-soshmed__link" href="#">Facebook</a>
+                </li>
+                <li class="mobile-soshmed__item">
+                  <a class="mobile-soshmed__link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ==================== DESKTOP MENU ==================== -->
+        <ul class="link-focus site-nav">
+          <li class="site-nav__items"><a href="index.html" class="site-nav__link site-nav__link--accent">Студія</a></li>
+          <li class="site-nav__items"><a href="portfolio.html" class="site-nav__link ">Портфоліо</a></li>
+          <li class="site-nav__items"><a href="#" class="site-nav__link ">Контакти</a></li>
+        </ul>
         </nav>
         <ul class="link-focus auth-nav">
           <li class="auth-nav__items">
@@ -48,7 +100,9 @@
             </a>
           </li>
         </ul>
-      </div>
+        </div>
+        
+        </header>
     </header>
 
     <main>
@@ -79,7 +133,7 @@
             <li class="items">
               <a href="images/portfolio/img1.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img1.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img1.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -99,7 +153,7 @@
             <li class="items">
               <a href="images/portfolio/img2.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img2.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img2.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -121,7 +175,7 @@
             <li class="items">
               <a href="images/portfolio/img3.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img3.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img3.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -140,7 +194,7 @@
             <li class="items">
               <a href="images/portfolio/img4.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img4.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img4.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -159,7 +213,7 @@
             <li class="items">
               <a href="images/portfolio/img5.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img5.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img5.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -178,7 +232,7 @@
             <li class="items">
               <a href="images/portfolio/img6.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img6.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img6.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -197,7 +251,7 @@
             <li class="items">
               <a href="images/portfolio/img7.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img7.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img7.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -216,7 +270,7 @@
             <li class="items">
               <a href="images/portfolio/img8.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img8.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img8.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -235,7 +289,7 @@
             <li class="items">
               <a href="images/portfolio/img9.jpg" class="elements__decoration elements__picture">
                 <div class="port__discript">
-                  <img src="images/portfolio/img9.jpg" alt="photo" width="370" height="294" class="foto" />
+                  <img src="images/portfolio/img9.jpg" alt="photo" width="100%" height="294" class="foto" />
                   <div class="port__paragraph">
                     <p class="port__curd">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -323,6 +377,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/mobile-menu.js"></script>
   <script defer src="./js/mobile-menu.js"></script>
   </body>
   

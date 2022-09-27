@@ -13,7 +13,7 @@
 
 .port__paragraph {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     position: absolute;
     top: 0;
@@ -24,4 +24,8 @@
     width: 100%;
     transition: transform 250ms var(--timing-functione);
     transform: translateY(101%);
+
+        @media screen and (min-width:768px) {
+                align-items: center;
+            }
 }
