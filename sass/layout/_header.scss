@@ -1,7 +1,7 @@
 /* ================== header ==================== */
 .header {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: var(--footer-bacground-color);
     text-align: center;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -12,25 +12,20 @@
     margin: 0 auto;
 }
 
-// tablet-img
-
 @media screen and (min-width:768px) {
     .header{
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker-tablet.jpg);
     }
 }
 
-//    desltop-img
 
 @media screen and (min-width:1200px) {
     .header{
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/сoworker.jpg);
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
-
-// 2x-img
-
-// mobile-2x
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
 screen and (min-resolution: 192dpi) and (max-width:767px),
@@ -40,8 +35,6 @@ screen and (min-resolution: 2dppx) and (max-width:767px) {
     }
 }
 
-//    tablet-2x
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
 screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
@@ -50,7 +43,6 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
     }
 }
 
-// desktop-2x
 @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
 screen and (min-resolution: 192dpi) and (min-width:1200px),
 screen and (min-resolution: 2dppx) and (min-width:1200px) {

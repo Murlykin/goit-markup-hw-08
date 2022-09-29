@@ -5,19 +5,17 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 30px;
+    gap: 30px;
     & .item {
-    flex-basis: calc((100% - 50px) / 2);
-    margin-bottom: 30px;
-   
+    flex-basis: calc((100% - 30px) / 2);
+    
     @media screen and (min-width:768px) {
-            flex-basis: calc((100% - 150px)/ 3);
+            flex-basis: calc((100% - 60px)/ 3);
         }
 
     @media screen and (min-width:1200px) {
             flex-basis: calc((100% - 150px)/ 6);
-                  }
-
-
+        }
 }
     &>.icones {
     display: flex;
