@@ -4,11 +4,16 @@
     justify-content: space-between;
     margin-left: -30px;
 
+    @media screen and (max-width:480px) {
+        margin-top: -30px;
+    }
+
     &>.items {
         margin-left: 30px;
         position: relative;
         flex-basis: calc(100% / 1 - 30px);
         margin-top: 30px;
+
 
         @media screen and (min-width:768px) {
             margin-left: 30px;
@@ -24,6 +29,7 @@
         margin-top: 30px;
     }
 }
+
 .elements__decoration {
     text-decoration: none;
 }
