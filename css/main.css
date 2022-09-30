@@ -799,6 +799,11 @@ body {
   text-decoration: none;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 379px) {
+  .mobile-auth-nav__link--phone {
+    font-weight: 400;
+  }
+}
 
 .mobile-soshmed {
   display: -webkit-box;
@@ -835,7 +840,7 @@ body {
 .mobile-soshmed__link:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media (max-width: 449px) {
+@media screen and (max-width: 449px) {
   .mobile-soshmed__link:not(:last-child) {
     padding-left: 10px;
   }
