@@ -48,6 +48,7 @@
 .footer__add {
     @media screen and (max-width: 768px) {
         margin-bottom: 60px;
+        margin-bottom: 0;
       }
   @media screen and (min-width:1200px) {
     margin-bottom: 60px;
@@ -118,10 +119,9 @@
   }
      @media screen and (max-width: 768px) {
       margin-bottom: 60px;
+      margin-bottom: 0;
      }
-     
 }
-
 
 .icones .footer__block {
   margin-left: auto;

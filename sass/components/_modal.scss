@@ -176,7 +176,7 @@
     align-items: center;
     font-size: 12px;
     line-height: 1.71;
-    flex-shrink: 0;
+    // flex-shrink: 0;
     @media screen and (min-width:1200px) {
             font-size: 14px;
     }
@@ -188,9 +188,9 @@
         background: none;
         display: inline-block;
         margin-right: 7px;
-        border: 1px solid #212121;
         cursor: pointer;
         border: 2px solid #212121;
+        flex-shrink: 0;
     }
 
     &>.agree__icone:focus {

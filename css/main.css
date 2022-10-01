@@ -206,7 +206,6 @@ body {
 .auth-nav {
   display: none;
   margin-left: auto;
-  padding-right: 15px;
 }
 @media screen and (min-width: 1200px) {
   .auth-nav {
@@ -216,11 +215,13 @@ body {
 @media screen and (min-width: 1200px) {
   .auth-nav .auth-nav__items:not(:first-child) {
     margin-left: 50px;
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 768px) {
   .auth-nav {
     display: block;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -625,8 +626,6 @@ body {
           align-items: center;
   font-size: 12px;
   line-height: 1.71;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 @media screen and (min-width: 1200px) {
   .agree__label {
@@ -640,9 +639,10 @@ body {
   background: none;
   display: inline-block;
   margin-right: 7px;
-  border: 1px solid #212121;
   cursor: pointer;
   border: 2px solid #212121;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .agree__label > .agree__icone:focus {
   background-color: var(--button-hover-focus);
@@ -871,6 +871,7 @@ body {
 
 /* ============================ cection-2================= */
 .description {
+  margin: 0 0 0 -30px;
   padding: 0px;
 }
 @media screen and (min-width: 768px) {
@@ -880,7 +881,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 0 0 -30px;
+    margin: 0 0 -30px -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -890,7 +891,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 0 0 -30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1400,6 +1400,7 @@ body {
 @media screen and (max-width: 768px) {
   .footer__add {
     margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1498,6 +1499,7 @@ body {
 @media screen and (max-width: 768px) {
   .footer__block {
     margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 
@@ -1705,7 +1707,7 @@ body {
           justify-content: space-between;
   margin-left: -30px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .elements {
     margin-top: -30px;
   }
