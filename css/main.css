@@ -256,7 +256,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .site-nav__link,
-.auth-nav__contact {
+  .auth-nav__contact {
     padding-top: 32px;
     padding-bottom: 32px;
   }
